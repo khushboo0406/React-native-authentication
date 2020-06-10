@@ -9,14 +9,14 @@ class App extends Component {
   componentDidMount() {
     firebase.initializeApp({
       // enter this following details from birebase,
-      apiKey: '',
-      authDomain: '',
-      databaseURL: '',
-      projectId: '',
-      storageBucket: '',
-      messagingSenderId: '',
-      appId: '',
-      measurementId: '',
+      // apiKey: '',
+      // authDomain: '',
+      // databaseURL: '',
+      // projectId: '',
+      // storageBucket: '',
+      // messagingSenderId: '',
+      // appId: '',
+      // measurementId: '',
     });
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
