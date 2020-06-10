@@ -8,14 +8,15 @@ class App extends Component {
   state = {loggedIn: null};
   componentDidMount() {
     firebase.initializeApp({
-      apiKey: 'AIzaSyAymAFgYodPCDXyNFvS1fxt-AL0Ikxi-QE',
-      authDomain: 'authentication-a62e4.firebaseapp.com',
-      databaseURL: 'https://authentication-a62e4.firebaseio.com',
-      projectId: 'authentication-a62e4',
-      storageBucket: 'authentication-a62e4.appspot.com',
-      messagingSenderId: '501530196833',
-      appId: '1:501530196833:web:8a0c17a8cbc79dbbc5a320',
-      measurementId: 'G-73JN1NMCYD',
+      // enter this following details from birebase,
+      apiKey: '',
+      authDomain: '',
+      databaseURL: '',
+      projectId: '',
+      storageBucket: '',
+      messagingSenderId: '',
+      appId: '',
+      measurementId: '',
     });
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
